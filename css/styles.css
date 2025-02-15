@@ -519,11 +519,11 @@ input[type='checkbox'] {
 /*     Header     */
 /******************/
 .header {
-	padding-top: 7rem;
-	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
-	background-size: cover;
-	text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5.5rem;
+    background-color: #343a40; /* Optional: Adjust background color */
+    text-align: center;
+    position: relative;
 }
 
 .header .h1-large {
@@ -620,7 +620,7 @@ input[type='checkbox'] {
 /*******************/
 .split .area-1 {
 	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/WhyWorkWithMe.jpeg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -668,17 +668,18 @@ input[type='checkbox'] {
 
 .basic-3 .image-container {
 	margin-bottom: 1rem;
-}
-
-/* Hover Animation */
-.basic-3 .image-container {
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .basic-3 .image-container img {
-	margin: 0;
+	width: 100%;
+	/* Ensures the image takes full width of the container */
+	height: auto;
+	/* Keeps aspect ratio intact */
+	object-fit: cover;
+	/* Ensures the image covers the container, cropping if necessary */
 	transition: all 0.2s;
 }
 
@@ -686,7 +687,23 @@ input[type='checkbox'] {
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-} 
+}
+.basic-3 .mobile-image-container img {
+	width: 60%;
+	/* Adjust width to fit better */
+	height: auto;
+	/* Maintain aspect ratio */
+	max-width: 300px;
+	/* Prevents the image from getting too big */
+	display: block;
+	margin: 0 auto;
+	/* Centers the image */
+}
+
+/* Optional: Prevent hover zoom effect for mobile images */
+.basic-3 .mobile-image-container:hover img {
+	transform: none;
+}
 /* end of hover animation */
 
 
@@ -1278,3 +1295,10 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+.text-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
