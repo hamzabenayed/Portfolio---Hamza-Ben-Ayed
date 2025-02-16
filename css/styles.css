@@ -1254,6 +1254,23 @@ a:hover.back-to-top {
 			transform: translateX(-100%);
 		}
 	}
+		 .demo-container {
+		 	display: flex;
+		 	justify-content: center;
+		 	align-items: center;
+		 	width: 100%;
+		 	margin-top: 20px;
+		 }
+	
+		 video {
+		 	width: 80%;
+		 	/* Adjust size */
+		 	max-width: 8000px;
+		 	/* Limit max width */
+		 	border-radius: 10px;
+		 	/* Rounded corners */
+		 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		 }
 
 	/* end of details */
 
