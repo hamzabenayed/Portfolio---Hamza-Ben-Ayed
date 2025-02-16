@@ -671,11 +671,11 @@ input[type='checkbox'] {
 	display: flex;
 	align-items: center;
 	gap: 30px;
-	animation: scroll 15s linear infinite;
+	animation: scroll 13s linear infinite;
 }
 
 .skills-marquee img {
-	width: 50px;
+	width: 100px;
 	/* Adjust size */
 	height: auto;
 	transition: transform 0.3s ease-in-out;
