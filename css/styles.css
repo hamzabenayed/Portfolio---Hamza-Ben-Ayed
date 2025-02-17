@@ -1229,7 +1229,7 @@ a:hover.back-to-top {
 		align-items: center;
 		gap: 20px;
 		/* Adjust space between images */
-		animation: scroll 30s linear infinite;
+		animation: scroll 15s linear infinite;
 		/* Adjust time as needed */
 	}
 
@@ -1244,6 +1244,35 @@ a:hover.back-to-top {
 		transform: scale(1.2);
 		/* Hover effect */
 	}
+
+		.details-web-image-container {
+			overflow: hidden;
+			white-space: nowrap;
+			width: 100%;
+			padding: 10px 0;
+			margin-top: 50px;
+		}
+	
+		.details-web-marquee {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			/* Space between images */
+			animation: scroll 15s linear infinite;
+			/* Adjusted time for smooth scroll */
+		}
+	
+		.details-web-marquee img {
+			width: 1000px;
+			/* Adjust width to fit images */
+			height: 350px;
+			transition: transform 0.3s ease-in-out;
+		}
+	
+		.details-web-marquee img:hover {
+			transform: scale(1.2);
+			/* Hover effect */
+		}
 
 	@keyframes scroll {
 		0% {
