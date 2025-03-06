@@ -1246,51 +1246,59 @@ a:hover.back-to-top {
 		/* Hover effect */
 	}
 
-		.details-web-image-container {
-			overflow: hidden;
-			white-space: nowrap;
-			width: 100%;
-			padding: 10px 0;
-			margin-top: 50px;
-		}
-	
-		.details-web-marquee {
-			display: flex;
-			align-items: center;
-			gap: 20px;
-			/* Space between images */
-			animation: scroll 15s linear infinite;
-			/* Adjusted time for smooth scroll */
-		}
-	
-		.details-web-marquee img {
-			width: 1000px;
-			/* Adjust width to fit images */
-			height: 350px;
-			transition: transform 0.3s ease-in-out;
-		}
-	
-		.details-web-marquee img:hover {
-			transform: scale(1.2);
-			/* Hover effect */
-		}
 
-	@keyframes scroll {
-		0% {
-			transform: translateX(100%);
-		}
+.details-web-image-container {
+	overflow: hidden;
+	/* Hide the overflow to make sure only one part of images is visible at a time */
+	width: 600%;
+	/* Full width of the container */
+	padding: 10px 0;
+	margin-top: 50px;
+}
 
-		100% {
-			transform: translateX(-100%);
-		}
+.details-web-marquee {
+	display: flex;
+	/* Flexbox to layout images in a row */
+	gap: 20px;
+	/* Space between images */
+	animation: scroll 40s linear infinite;
+	/* Scroll animation with 40s duration */
+}
+
+.details-web-marquee img {
+	width: auto;
+	/* Keep the images in their real size */
+	height: 350px;
+	/* Fixed height for all images */
+	transition: transform 0.3s ease-in-out;
+	/* Hover effect */
+}
+
+.details-web-marquee img:hover {
+	transform: scale(1.2);
+	/* Scale the image on hover */
+}
+
+/* Define the scrolling animation */
+@keyframes scroll {
+	0% {
+		transform: translateX(100%);
+		/* Start from the right */
 	}
-		 .demo-container {
-		 	display: flex;
-		 	justify-content: center;
-		 	align-items: center;
-		 	width: 100%;
-		 	margin-top: 20px;
-		 }
+
+	100% {
+		transform: translateX(-100%);
+		/* End at the left */
+	}
+}
+
+.demo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
 	
 		 video {
 		 	width: 80%;
