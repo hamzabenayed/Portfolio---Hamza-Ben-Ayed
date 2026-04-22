@@ -1,5 +1,0 @@
-﻿Current active CV file used by the website:
-assets/cv/Resume_Ben_Ayed_Hamza.pdf
-
-If you replace your CV, keep the same file name
-or update all CV links in HTML pages.
