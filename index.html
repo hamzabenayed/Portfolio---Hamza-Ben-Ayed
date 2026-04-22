@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -70,20 +70,20 @@
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="https://www.facebook.com/hamzusssssss">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
+                <div class="nav-contact-actions">
+                    <a class="nav-cv-button" href="assets/cv/Resume_Ben_Ayed_Hamza.pdf" target="_blank" rel="noopener noreferrer" download>
+                        <i class="fas fa-file-download"></i> Download CV
+                    </a>
+                    <a class="nav-contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=hamzabenayed2000@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a class="nav-contact-link nav-contact-link-secondary" href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a class="nav-contact-link nav-contact-link-secondary" href="https://github.com/hamzabenayed" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -93,17 +93,38 @@
     <!-- Header -->
     <header id="header" class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                        <img src="./images/Profile photo.jpeg" style="border-radius:50%" alt="Profile Photo" >
-
-                    <div class="text-container">
-<h1 class="h1-large" style="font-size: 30px;">Crafting Scalable and Efficient Software Solutions to Drive Innovation.
-</h1>
-                        <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+            <div class="row align-items-center hero-row">
+                <div class="col-lg-7">
+                    <div class="text-container hero-content">
+                        <p class="hero-kicker">Software Engineer | Platform &amp; CI/CD</p>
+                        <h1 class="h1-large">Building Production-Ready Software and Infrastructure That Scales with Business Growth.</h1>
+                        <p class="hero-subtitle">3+ years delivering secure applications, resilient APIs, and automated delivery pipelines for
+                        high-quality production environments.</p>
+                        <div class="hero-actions">
+                            <a class="btn-solid-lg page-scroll" href="#projects">View Projects</a>
+                            <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+                        </div>
+                        <div class="hero-highlights">
+                            <span class="hero-chip">CI/CD Automation</span>
+                            <span class="hero-chip">Platform Engineering</span>
+                            <span class="hero-chip">Production Reliability</span>
+                        </div>
                     </div> <!-- end of text-container -->
-                    
+                </div> <!-- end of col -->
+                <div class="col-lg-5">
+                    <div class="hero-profile-card">
+                        <img class="hero-avatar" src="./images/Profile photo.jpeg" alt="Hamza Ben Ayed profile photo">
+                        <div class="hero-metrics">
+                            <div class="hero-metric">
+                                <span class="hero-metric-value">3+ years</span>
+                                <span class="hero-metric-label">Production Software Delivery</span>
+                            </div>
+                            <div class="hero-metric">
+                                <span class="hero-metric-value">CI/CD</span>
+                                <span class="hero-metric-label">Automated Build, Test, and Deployment</span>
+                            </div>
+                        </div>
+                    </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -114,33 +135,86 @@
     <!-- About-->
     <div id="about" class="basic-1 bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hi there I'm Hamza,</h2>
-                        <p>a passionate software engineer, I am dedicated to crafting scalable, efficient, and user-centered applications. With
-                        expertise in both front-end and back-end technologies, I enjoy solving complex problems and building innovative
-                        solutions that drive user engagement and business growth.</p>
-                    </div> <!-- end of text-container -->
+            <div class="about-header">
+                <h2>About &amp; Experience</h2>
+            </div>
+            <div class="row about-layout">
+                <div class="col-lg-5">
+                    <div class="about-side">
+                        <div class="about-intro">
+                            <h3>Hi there I'm Hamza,</h3>
+                            <p>Software Engineer with 3+ years of hands-on experience delivering production-grade applications and platform
+                            infrastructure. I build scalable, secure, and maintainable systems with a strong focus on operational excellence.</p>
+                            <ul class="about-focus list-unstyled">
+                                <li><span class="focus-label">Platform Engineering:</span> Designing reliable infrastructure foundations for product teams.</li>
+                                <li><span class="focus-label">CI/CD Automation:</span> Streamlining build, test, and deployment workflows for faster releases.</li>
+                                <li><span class="focus-label">Production Reliability:</span> Improving system stability, observability, and release confidence.</li>
+                            </ul>
+                        </div>
+                        <div class="about-highlight">
+                            <h4>Impact Snapshot</h4>
+                            <div class="about-stat-grid">
+                                <div class="about-stat">
+                                    <span class="about-stat-value">3+</span>
+                                    <span class="about-stat-label">Years in Production</span>
+                                </div>
+                                <div class="about-stat">
+                                    <span class="about-stat-value">6</span>
+                                    <span class="about-stat-label">Major Roles Delivered</span>
+                                </div>
+                            </div>
+                            <div class="about-skill-chips">
+                                <span class="about-skill-chip">Java &amp; Spring</span>
+                                <span class="about-skill-chip">Node.js</span>
+                                <span class="about-skill-chip">CI/CD Pipelines</span>
+                                <span class="about-skill-chip">Cloud &amp; APIs</span>
+                            </div>
+                        </div>
+                    </div>
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">jan 2024 - sep 2024</div>
-                        <h6>Lead Mobile Developer</h6>
-                        <p>Developed & launched Tawasalna, a social networking & e-commerce app.</p>
-                        <div class="time">jun 2023 - aug 2023</div>
-                        <h6>Engineering internship</h6>
-                        <p>Developed a secure medical web platform with patient database & real-time notifications.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">aug 2022 - sept 2022</div>
-                        <h6>Mobile Developer Intern</h6>
-                        <p>Created a personalized fashion recommendation app with real-time backend.</p>
-                        <div class="time">jul 2021 - aug 2021</div>
-                        <h6>Web Developer Intern</h6>
-                        <p>Designed interfaces for simulating job interviews, recording video responses, and receiving feedback.</p>
+                <div class="col-lg-7">
+                    <div class="about-timeline">
+                        <article class="timeline-item">
+                            <div class="time">Apr 2025 - Present</div>
+                            <h6>Platform &amp; CI/CD Engineer</h6>
+                            <p>Built scalable platform infrastructure and automated CI/CD pipelines to improve deployment consistency, reduce
+                            manual release risk, and accelerate delivery cadence.</p>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="time">Jan 2024 - Sep 2024</div>
+                            <h6>Lead Mobile Developer</h6>
+                            <p>Led mobile delivery for Tawasalna, launching a social networking and e-commerce experience with a production-ready
+                            architecture and maintainable release workflow.</p>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="time">Jun 2023 - Aug 2023</div>
+                            <h6>Engineering Internship</h6>
+                            <p>Developed a secure medical web platform with patient data management and real-time notifications, with strong
+                            attention to security and reliability requirements.</p>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="time">Oct 2022 - May 2023</div>
+                            <h6>Full-stack Developer</h6>
+                            <p class="timeline-context">Freelance Â· Hybrid</p>
+                            <p>Delivered multiple client products end-to-end with maintainable architecture and scalable backend services.</p>
+                            <ul class="timeline-projects list-unstyled">
+                                <li><span>Carpooling Platform:</span> Built ride-sharing features with trip listings, booking flows, and real-time search.</li>
+                                <li><span>Logistics Management System:</span> Designed driver tracking, route optimization, and traffic insight capabilities.</li>
+                                <li><span>Recipe Sharing Platform:</span> Created a community-based platform for recipe publishing, engagement, and discovery.</li>
+                            </ul>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="time">Aug 2022 - Sep 2022</div>
+                            <h6>Mobile Developer Intern</h6>
+                            <p>Built a personalized fashion recommendation mobile app integrated with a real-time backend to improve user
+                            engagement and responsiveness.</p>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="time">Jul 2021 - Aug 2021</div>
+                            <h6>Web Developer Intern</h6>
+                            <p>Designed interview simulation interfaces with video response recording and feedback features, focusing on clear UX
+                            flows and maintainable front-end implementation.</p>
+                        </article>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -154,36 +228,78 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Offered services</h2>
-                    <p class="p-heading">Software engineering has been my core focus for over 5 years, and during this time, I’ve honed my skills in developing
-                    innovative and efficient solutions. I specialize in creating scalable applications and building systems that drive
-                    business success</p>
+                    <h2 class="h2-heading">Services I Deliver</h2>
+                    <p class="p-heading">Production-focused engineering for scalable products, reliable platforms, and faster release cycles.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div class="row d-flex align-items-stretch">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-gem"></i>
-                        <h4>DESIGN</h4>
-                        <p>Successful online projects start with good design. It establishes a solid foundation for future
-                            development and allows for long term growth.</p>
-                    </div> <!-- end of text-box -->
+            <div class="row services-grid">
+                <div class="col-md-6">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+                        <h4>Platform &amp; CI/CD Engineering</h4>
+                        <p>Automate build, test, deployment, rollback, and release controls to deliver faster with strong reliability and lower operational risk.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">CI/CD</span>
+                            <span class="service-tag">Release Automation</span>
+                            <span class="service-tag">Quality Gates</span>
+                        </div>
+                    </article>
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-code"></i>
-                        <h4>DEVELOPMENT</h4>
-                        <p>Tailored solutions to meet your business needs. Whether you're building a new product or improving an
-                            existing one, I create high-performing, scalable applications.</p>
-                    </div> <!-- end of text-box -->
+                <div class="col-md-6">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>Cloud Infrastructure &amp; Reliability</h4>
+                        <p>Design scalable cloud architecture with observability, alerting, and incident-ready operations that keep production systems resilient.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Scalability</span>
+                            <span class="service-tag">Observability</span>
+                            <span class="service-tag">SRE Practices</span>
+                        </div>
+                    </article>
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-tv"></i>
-                        <h4>API Development & Integration</h4>
-                        <p>I design and develop robust APIs to enable smooth communication between systems, ensuring data flows
-                            efficiently and securely.</p>
-                    </div> <!-- end of text-box -->
+                <div class="col-md-6">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-plug"></i></div>
+                        <h4>Backend &amp; API Engineering</h4>
+                        <p>Build secure, high-performance APIs and backend services with clean architecture, integration reliability, and long-term maintainability.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Secure APIs</span>
+                            <span class="service-tag">Microservices</span>
+                            <span class="service-tag">Data Integrity</span>
+                        </div>
+                    </article>
+                </div> <!-- end of col -->
+                <div class="col-md-6">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-tasks"></i></div>
+                        <h4>Technical Delivery Leadership</h4>
+                        <p>Lead end-to-end engineering delivery by aligning architecture, execution, and quality standards across teams and release milestones.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Roadmaps</span>
+                            <span class="service-tag">Engineering Quality</span>
+                            <span class="service-tag">Execution</span>
+                        </div>
+                    </article>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row service-metrics-row">
+                <div class="col-md-4">
+                    <div class="service-metric">
+                        <span class="service-metric-value">3+ Years</span>
+                        <span class="service-metric-label">Production Engineering Experience</span>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="service-metric">
+                        <span class="service-metric-value">CI/CD + Platform</span>
+                        <span class="service-metric-label">Core Specialization and Delivery Focus</span>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="service-metric">
+                        <span class="service-metric-value">Secure &amp; Maintainable</span>
+                        <span class="service-metric-label">Engineering Standards for Long-Term Scale</span>
+                    </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
 
@@ -201,20 +317,38 @@
                     <div class="col-lg-12">     
                         
                         <!-- Text Container -->
-                        <div class="text-container">
-                            <h2>Why Work With Me</h2>
-                            <p>I am a dedicated problem solver with a passion for building scalable, high-performance software solutions. I prioritize
-                            understanding the unique needs of each project and work closely with clients to deliver results that drive success.</p>
-                            <h5>TECHNOLOGIES I WORK WITH</h5>
-                            <p>I specialize in backend technologies like Java, Spring Boot, and Node.js, while also having strong expertise in
-                            front-end development using React, Angular, and modern JavaScript frameworks. My goal is to build secure, efficient, and
-                            robust applications.</p>
-                            <h5>DEVELOPMENT SKILLS</h5>
-                            <p>I am proficient in designing and developing API services, microservices, and cloud-based applications. I regularly work
-                            with databases like MySQL, MongoDB, and PostgreSQL, and I have experience implementing CI/CD pipelines and automated
-                            testing to ensure high-quality code.</p>
-                            
-    
+                        <div class="text-container details-content">
+                            <p class="details-kicker">Execution + Reliability</p>
+                            <h2>Why Teams Work With Me</h2>
+                            <p class="details-intro">I combine software engineering depth with platform thinking to help teams ship secure features
+                            faster, reduce production risk, and build systems that remain maintainable at scale.</p>
+                            <div class="details-points">
+                                <article class="details-point">
+                                    <h5>Production-First Architecture</h5>
+                                    <p>Design backend services, APIs, and data flows with scalability, security, and clear ownership from day one.</p>
+                                </article>
+                                <article class="details-point">
+                                    <h5>Reliable Delivery Systems</h5>
+                                    <p>Implement CI/CD pipelines, quality gates, and rollback-ready release workflows to improve delivery confidence.</p>
+                                </article>
+                                <article class="details-point">
+                                    <h5>Engineering Partnership</h5>
+                                    <p>Translate product goals into practical technical plans and communicate clearly with both technical and business stakeholders.</p>
+                                </article>
+                            </div>
+                            <h5>Core Technology Stack</h5>
+                            <div class="details-tech-chips">
+                                <span class="details-chip">Java</span>
+                                <span class="details-chip">Spring Boot</span>
+                                <span class="details-chip">Node.js</span>
+                                <span class="details-chip">React</span>
+                                <span class="details-chip">Angular</span>
+                                <span class="details-chip">MySQL</span>
+                                <span class="details-chip">PostgreSQL</span>
+                                <span class="details-chip">MongoDB</span>
+                                <span class="details-chip">Docker</span>
+                                <span class="details-chip">CI/CD</span>
+                            </div>
                         </div> <!-- end of text-container -->
                         <!-- end of text container -->
 
@@ -226,23 +360,30 @@
     <!-- end of details -->
 
 <div class="skills-container">
+    <div class="skills-header">
+        <h3>Tech Stack &amp; Tooling</h3>
+        <p>Production-ready technologies and platform tools I use to build, ship, and operate modern software systems.</p>
+    </div>
     <div class="skills-marquee">
         <img src="images/icons/javascript_icon_130900.png" alt="JavaScript" />
-        <img src="images/icons/java_original_wordmark_logo_icon_146459.png" alt="JavaScript" />
-        <img src="images/icons/jenkins_logo_icon_170552.png" alt="JavaScript" />
-        <img src="images/icons/mongodb_original_wordmark_logo_icon_146425.png" alt="JavaScript" />
-        <img src="images/icons/oracle_original_logo_icon_146401.png" alt="JavaScript" />
-        <img src="images/icons/wordpress_15015925.png" alt="JavaScript" />
-        <img src="images/icons/prog-symfony_icon-icons.com_50769.png" alt="JavaScript" />
-        <img src="images/icons/reactjs_logo_icon_170805.png" alt="JavaScript" />
-        <img src="images/icons/scrum_backlog_process_project_management_agile_approache_dev_icon_261689.png" alt="JavaScript" />
-        <img src="images/icons/nodejs_original_wordmark_logo_icon_146412.png" alt="JavaScript" />
-        <img src="images/icons/springboot_logo_icon_249540.png" alt="JavaScript" />
-        <img src="images/icons/github-logo_icon-icons.com_73546.png" alt="JavaScript" />
-        <img src="images/icons/file_type_docker_icon_130643.png" alt="JavaScript" />
-        <img src="images/icons/mysql_original_wordmark_logo_icon_146417.png" alt="JavaScript" />
-
-      
+        <img src="images/icons/java_original_wordmark_logo_icon_146459.png" alt="Java" />
+        <img src="images/icons/jenkins_logo_icon_170552.png" alt="Jenkins" />
+        <img src="images/icons/mongodb_original_wordmark_logo_icon_146425.png" alt="MongoDB" />
+        <img src="images/icons/oracle_original_logo_icon_146401.png" alt="Oracle" />
+        <img src="images/icons/wordpress_15015925.png" alt="WordPress" />
+        <img src="images/icons/prog-symfony_icon-icons.com_50769.png" alt="Symfony" />
+        <img src="images/icons/reactjs_logo_icon_170805.png" alt="React" />
+        <img src="images/icons/scrum_backlog_process_project_management_agile_approache_dev_icon_261689.png" alt="Agile Scrum" />
+        <img src="images/icons/nodejs_original_wordmark_logo_icon_146412.png" alt="Node.js" />
+        <img src="images/icons/springboot_logo_icon_249540.png" alt="Spring Boot" />
+        <img src="images/icons/github-logo_icon-icons.com_73546.png" alt="GitHub" />
+        <img src="images/icons/file_type_docker_icon_130643.png" alt="Docker" />
+        <img src="images/icons/mysql_original_wordmark_logo_icon_146417.png" alt="MySQL" />
+        <img src="images/icons/kubernetes-icon.png" alt="Kubernetes" />
+        <img src="images/icons/terraform-icon.png" alt="Terraform" />
+        <img src="images/icons/nextjs-icon.png" alt="NextJS" />
+        <img src="images/icons/k9s-icon.png" alt="K9S" />
+        <img src="images/icons/argocd-icon.png" alt="ArgoCD" />
     </div>
 </div>
 
@@ -251,62 +392,108 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Delivered projects</h2>
-                    <p class="p-heading">Listed below are some of the most representative projects I've worked on.Each project showcases my ability to create high-performing, secure, and maintainable software tailored to client needs.</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="BuilLab.html">
-                                <img class="img-fluid" src="images/BuilLab1.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Project (Web DevOps Automation Platform) :</strong> Design and development of a web DevOps platform dedicated to automation and continuous management of software
-                        development projects. <a class="blue" href="BuilLab.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
-                        <div class="mobile-image-container">
-                            <a href="Transportyni.html">
-                                <img class="img-fluid" src="images/Transportyni.png" alt="alternative">
-                            </a>
+                    <span class="projects-kicker">Selected Work</span>
+                    <h2 class="h2-heading">Projects Built For Production</h2>
+                    <p class="p-heading">A curated selection of platforms and products I designed and delivered, with focus on reliability, security, and long-term maintainability.</p>
+                </div>
+            </div>
+
+            <div class="project-featured">
+                <div class="project-featured-media">
+                    <a href="BuilLab.html">
+                        <img class="img-fluid" src="images/BuilLab1.png" alt="BuildLab DevOps automation platform dashboard">
+                    </a>
+                </div>
+                <div class="project-featured-content">
+                    <span class="project-type">Featured Platform Project</span>
+                    <h3>BuildLab - DevOps Automation Platform</h3>
+                    <p>Engineered a web platform that centralizes CI/CD orchestration, release governance, and team collaboration across the software delivery lifecycle.</p>
+                    <ul class="project-highlights list-unstyled">
+                        <li>Automated build, test, and deployment pipelines with approval gates and rollback readiness.</li>
+                        <li>Implemented role-based workflows and auditability for secure production operations.</li>
+                        <li>Standardized release processes to reduce deployment risk and improve delivery velocity.</li>
+                    </ul>
+                    <div class="project-tech-list">
+                        <span class="project-tech">CI/CD</span>
+                        <span class="project-tech">Platform Engineering</span>
+                        <span class="project-tech">Release Automation</span>
+                        <span class="project-tech">Production Ops</span>
+                    </div>
+                    <a class="btn-solid-reg project-cta" href="BuilLab.html">View Case Study</a>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <a class="project-card-media" href="Transportyni.html">
+                        <img class="img-fluid" src="images/Transportyni.png" alt="Transportyni mobile application interface">
+                    </a>
+                    <div class="project-card-body">
+                        <span class="project-type">Mobile Product</span>
+                        <h4>Transportyni</h4>
+                        <p>Built a public transport mobile application with route guidance, GPS support, and real-time updates for a dependable commuter experience.</p>
+                        <div class="project-tech-list">
+                            <span class="project-tech">Android / iOS</span>
+                            <span class="project-tech">Real-time Data</span>
+                            <span class="project-tech">Location Services</span>
                         </div>
-                        <p><strong>Project (Public Transport App) :</strong>  Development of a Public Transport Mobile App (Android/iOS): Features include GPS, routes, and real-time data, with a
-                        focus on securing sensitive data
-                            <a class="blue" href="Transportyni.html">details</a>
-                        </p>
-                    </div> <!-- end of text-container -->
+                        <a class="project-link" href="Transportyni.html">Explore project details</a>
+                    </div>
+                </article>
 
+                <article class="project-card">
+                    <a class="project-card-media" href="carpooling.html">
+                        <img class="img-fluid" src="images/CarpoolingScreenshots/Services.png" alt="Carpooling platform service page screenshot">
+                    </a>
+                    <div class="project-card-body">
+                        <span class="project-type">Web Platform</span>
+                        <h4>Carpooling Platform</h4>
+                        <p>Delivered a ride-sharing web platform featuring trip listings, booking workflows, and fast search to streamline daily mobility.</p>
+                        <div class="project-tech-list">
+                            <span class="project-tech">Booking Flow</span>
+                            <span class="project-tech">Search Experience</span>
+                            <span class="project-tech">User Management</span>
+                        </div>
+                        <a class="project-link" href="carpooling.html">Explore project details</a>
+                    </div>
+                </article>
 
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="carpooling.html">
-                                <img class="img-fluid" src="images/CarpoolingScreenshots/Services.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Project (Web Carpooling Platform) :</strong> A web-based ride-sharing platform that connects drivers and passengers for cost-effective and eco-friendly travel. <a class="blue" href="carpooling.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container" >
-                        <div class="mobile-image-container">
-                            <a href="Tawasalna.html">
-                                <img class="img-fluid"   src="images/Tawasalna1.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><stron><strong>Project (Tawasalna) :</strong> social networking and e-commerce mobile app designed for Gulf countries, enabling communities to connect & engage <a class="blue" href="Tawasalna.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="WebMedical.html">
-                                <img class="img-fluid" src="images/WebMedical1.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><str><strong>Project (medical web platform) :</strong> Developed a secure medical web platform with patient database & real-time notifications. <a class="blue" href="WebMedical.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
+                <article class="project-card">
+                    <a class="project-card-media" href="Tawasalna.html">
+                        <img class="img-fluid" src="images/Tawasalna1.jpg" alt="Tawasalna social networking and ecommerce app screenshot">
+                    </a>
+                    <div class="project-card-body">
+                        <span class="project-type">Mobile Commerce</span>
+                        <h4>Tawasalna</h4>
+                        <p>Led development of a social networking and e-commerce mobile experience built for community engagement and scalable market growth.</p>
+                        <div class="project-tech-list">
+                            <span class="project-tech">Social Features</span>
+                            <span class="project-tech">Mobile Commerce</span>
+                            <span class="project-tech">Scalable Architecture</span>
+                        </div>
+                        <a class="project-link" href="Tawasalna.html">Explore project details</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="project-card-media" href="WebMedical.html">
+                        <img class="img-fluid" src="images/WebMedical1.png" alt="Medical web platform dashboard screenshot">
+                    </a>
+                    <div class="project-card-body">
+                        <span class="project-type">Secure Health Platform</span>
+                        <h4>Medical Web Platform</h4>
+                        <p>Developed a secure medical web platform with patient data management and real-time notifications, emphasizing privacy and reliability.</p>
+                        <div class="project-tech-list">
+                            <span class="project-tech">Patient Data</span>
+                            <span class="project-tech">Security</span>
+                            <span class="project-tech">Live Notifications</span>
+                        </div>
+                        <a class="project-link" href="WebMedical.html">Explore project details</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
     <!-- end of projects -->
 
 
@@ -398,8 +585,8 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <p class="testimonial-text">“Mark is a skilled developer which will do everything possible to
-                            deliver the project on time and I really appreciate that”</p>
+                        <p class="testimonial-text">"Mark is a skilled developer which will do everything possible to
+                            deliver the project on time and I really appreciate that"</p>
                         <div class="details">
                             <img src="images/testimonial-1.jpg" alt="alternative">
                             <div class="text">
@@ -412,8 +599,8 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <p class="testimonial-text">“Loved to work with Mark he's such an awesome developer with great
-                            attention to details. He also has a great eye for design”</p>
+                        <p class="testimonial-text">"Loved to work with Mark he's such an awesome developer with great
+                            attention to details. He also has a great eye for design"</p>
                         <div class="details">
                             <img src="images/testimonial-2.jpg" alt="alternative">
                             <div class="text">
@@ -426,8 +613,8 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <p class="testimonial-text">“So glad we started working with Mark. We've used many times his
-                            design and development skills for our inhouse online projects”</p>
+                        <p class="testimonial-text">"So glad we started working with Mark. We've used many times his
+                            design and development skills for our inhouse online projects"</p>
                         <div class="details">
                             <img src="images/testimonial-3.jpg" alt="alternative">
                             <div class="text">
@@ -458,114 +645,118 @@
 
 
     <!-- Questions -->
-    <div class="accordion-1">
+    <div class="accordion-1 faq-section">
         <div class="container">
+            <div class="faq-header">
+                <span class="faq-kicker">FAQ</span>
+                <h2 class="h2-heading">Questions Teams Ask Before We Start</h2>
+                <p class="p-heading">Clear answers on delivery model, collaboration, and production support.</p>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Frequent questions</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <div class="card faq-card">
+                            <div class="card-header" id="faqHeadingOne">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                    How can I contact you quickly for a project discussion?
+                                </button>
+                            </div>
+                            <div id="faqCollapseOne" class="collapse show" aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    The fastest way is email or LinkedIn. I usually respond with next steps and availability within a short timeframe.
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How can I contact you and quickly get a quote for my online project?
+                        <div class="card faq-card">
+                            <div class="card-header" id="faqHeadingTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                    Do you handle both application development and infrastructure?
                                 </button>
                             </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
                                 <div class="card-body">
-                                    The best way to reach me is through my email or my LinkedIn account.
+                                    Yes. I cover backend and frontend engineering, plus platform and CI/CD implementation to ensure reliable production delivery.
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do you work on both frontend and backend development?
-                                </button>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                Yes! I’m a Full Stack Developer, meaning I can build both frontend interfaces and backend APIs, ensuring a seamless
-                                connection between the two.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    Are you available for freelance projects or full-time positions?
-                                </button>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    I am open to both freelance work and full-time opportunities, depending on the project scope and requirements.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Do you provide post-launch support?
-                                </button>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-Yes! I offer maintenance, bug fixes, and updates after project completion to ensure everything runs smoothly.                                </div>
-                            </div>
-                        </div>
-                      
-                       
-                    </div> <!-- end of accordion -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of accordion-1 -->
+                        <div class="card faq-card">
+                            <div class="card-header" id="faqHeadingThree">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                    Are you available for freelance and long-term opportunities?
+                                </button>
+                            </div>
+                            <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Yes. I am open to project-based freelance work and longer engagements, depending on scope, timeline, and technical fit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card faq-card">
+                            <div class="card-header" id="faqHeadingFour">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                    Do you provide support after release?
+                                </button>
+                            </div>
+                            <div id="faqCollapseFour" class="collapse" aria-labelledby="faqHeadingFour" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Yes. I provide post-launch support including fixes, maintenance, and iterative improvements to keep the system stable.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of questions -->
 
 
-    <div id="contact" class="form-1 bg-gray">
+    <div id="contact" class="form-1 contact-section bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link"> hamzabenayed2000@gmail.com</a> or Through my LinkedIn account <a class="blue no-line" href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/"> Hamza Ben Ayed</a>.</p>
-                </div> 
-            </div> 
-            <!--
-            <div class="row">
-                <div class="col-lg-12">
-                    
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" class="form-control-input" id="cname" required>
-                    <label class="label-control" for="cname">Name</label>
+            <div class="contact-header">
+                <span class="contact-kicker">Contact</span>
+                <h2>Let's Build Something Reliable</h2>
+                <p class="p-heading">If you need help with software delivery, platform engineering, or CI/CD modernization, reach out directly through the channels below.</p>
+            </div>
+            <div class="row contact-layout">
+                <div class="col-lg-8">
+                    <div class="contact-method-grid">
+                        <article class="contact-method-card">
+                            <h4>Email</h4>
+                            <p>Best for project scope, timelines, and technical requirements.</p>
+                            <a class="contact-method-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hamzabenayed2000@gmail.com" target="_blank" rel="noopener noreferrer">hamzabenayed2000@gmail.com</a>
+                        </article>
+                        <article class="contact-method-card">
+                            <h4>LinkedIn</h4>
+                            <p>Best for professional networking and career opportunities.</p>
+                            <a class="contact-method-link" href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank" rel="noopener noreferrer">Hamza Ben Ayed</a>
+                        </article>
+                        <article class="contact-method-card">
+                            <h4>GitHub</h4>
+                            <p>Review project work, implementation style, and technical depth.</p>
+                            <a class="contact-method-link" href="https://github.com/hamzabenayed" target="_blank" rel="noopener noreferrer">hamzabenayed</a>
+                        </article>
+                        <article class="contact-method-card">
+                            <h4>Availability</h4>
+                            <p>Open to freelance, contract, and long-term engineering engagements.</p>
+                            <span class="contact-method-note">Timezone: Africa/Tunis (UTC+1)</span>
+                        </article>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control-input" id="cemail" required>
-                    <label class="label-control" for="cemail">Email</label>
+                <div class="col-lg-4">
+                    <div class="contact-cta-card">
+                        <h4>Quick Actions</h4>
+                        <p>Choose the fastest way to start the conversation.</p>
+                        <a class="btn-solid-reg contact-cta-btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hamzabenayed2000@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a>
+                        <a class="btn-outline-reg contact-cta-btn" href="assets/cv/Resume_Ben_Ayed_Hamza.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
+                        <a class="btn-outline-reg contact-cta-btn" href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                    <label class="label-control" for="cmessage">Project details</label>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="form-control-submit-button">Submit</button>
-                </div>
-            </form>
-            
-            </div> 
-            </div> 
-            -->
-
-            </div> 
-        </div> 
+            </div>
+        </div>
     </div>  
     
 
@@ -573,57 +764,63 @@ Yes! I offer maintenance, bug fixes, and updates after project completion to ens
     <!-- Footer -->
     <div class="footer bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                    <span class="fa-stack">
-                        <a href="https://www.facebook.com/hamzusssssss">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+            <div class="footer-professional">
+                <div class="footer-brand-block">
+                    <h4>Hamza Ben Ayed</h4>
+                    <p>Software Engineer focused on production-ready applications, platform engineering, and reliable CI/CD delivery.</p>
+                    <a class="btn-solid-reg footer-cta" href="https://mail.google.com/mail/?view=cm&fs=1&to=hamzabenayed2000@gmail.com" target="_blank" rel="noopener noreferrer">Start a Conversation</a>
+                </div>
+                <div class="footer-links-block">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="assets/cv/Resume_Ben_Ayed_Hamza.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-block">
+                    <h5>Professional Contact</h5>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><span>Email:</span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hamzabenayed2000@gmail.com" target="_blank" rel="noopener noreferrer">hamzabenayed2000@gmail.com</a></li>
+                        <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank" rel="noopener noreferrer">hamza-ben-ayed</a></li>
+                        <li><span>GitHub:</span> <a href="https://github.com/hamzabenayed" target="_blank" rel="noopener noreferrer">hamzabenayed</a></li>
+                        <li><span>Location:</span> Tunisia</li>
+                    </ul>
+                    <div class="footer-professional-social">
+                        <a class="footer-social-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=hamzabenayed2000@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Hamza Ben Ayed">
+                            <i class="fas fa-envelope"></i>
                         </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        <a class="footer-social-link" href="https://www.linkedin.com/in/hamza-ben-ayed-307ab223b/" target="_blank" rel="noopener noreferrer" aria-label="Hamza Ben Ayed on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                    </span>
-                        
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/ben_ayed_hamza/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
+                        <a class="footer-social-link" href="https://github.com/hamzabenayed" target="_blank" rel="noopener noreferrer" aria-label="Hamza Ben Ayed on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of footer -->
 
-
-    <!-- Copyright -->
     <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">Hamza Ben Ayed</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-
-        
-        
-    </div> <!-- end of copyright --> 
+                    <p class="p-small">Copyright (c) <a class="no-line" href="#your-link">Hamza Ben Ayed</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
+
+
+
