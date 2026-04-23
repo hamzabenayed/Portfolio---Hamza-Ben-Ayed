@@ -312,3 +312,21 @@ What changed:
 
 Main file:
 - `index.html` (contact card link labels)
+
+## Outcomes and Process Sections
+
+Added two new strategic sections to strengthen professional positioning and delivery credibility.
+
+What changed:
+- Added a new `Project Outcomes` section:
+  - delivery impact framing
+  - measurable snapshot cards
+  - reliability and CI/CD value emphasis
+- Added a new `How I Work` section:
+  - 5-step workflow from discovery to release support
+  - clear execution model for clients and teams
+- Added dedicated responsive styling for both sections to ensure clean behavior on mobile, tablet, and desktop
+
+Main files:
+- `index.html` (new outcomes and process section structure/content)
+- `css/styles.css` (section visuals and responsive grid rules)

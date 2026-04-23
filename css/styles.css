@@ -1497,6 +1497,192 @@ input[type='checkbox'] {
 	text-decoration: underline;
 }
 
+/********************/
+/*     Outcomes     */
+/********************/
+.outcomes-section {
+	padding-top: 5.5rem;
+	padding-bottom: 4.8rem;
+	background-color: #f7f9fb;
+}
+
+.outcomes-header {
+	margin-bottom: 1.9rem;
+	text-align: center;
+}
+
+.outcomes-kicker {
+	display: inline-block;
+	margin-bottom: 0.6rem;
+	color: var(--color-primary);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+}
+
+.outcomes-header h2 {
+	margin-bottom: 0.75rem;
+}
+
+.outcomes-header p {
+	max-width: 44rem;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	color: #475569;
+}
+
+.outcomes-layout {
+	display: grid;
+	gap: 1rem;
+}
+
+.outcomes-summary-card {
+	padding: 1.1rem;
+	border: 1px solid #d3deef;
+	border-radius: 0.95rem;
+	background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+	box-shadow: 0 14px 32px rgba(15, 23, 42, 0.2);
+}
+
+.outcomes-summary-card h3 {
+	margin-bottom: 0.65rem;
+	color: #ffffff;
+}
+
+.outcomes-summary-card p {
+	margin-bottom: 0.9rem;
+	color: #d1d9e5;
+}
+
+.outcomes-summary-list {
+	margin-bottom: 0;
+}
+
+.outcomes-summary-list li {
+	position: relative;
+	margin-bottom: 0.5rem;
+	padding-left: 1.05rem;
+	color: #e2e8f0;
+}
+
+.outcomes-summary-list li::before {
+	content: "";
+	position: absolute;
+	top: 0.52rem;
+	left: 0;
+	width: 0.34rem;
+	height: 0.34rem;
+	border-radius: 50%;
+	background-color: #60a5fa;
+}
+
+.outcomes-summary-list li:last-child {
+	margin-bottom: 0;
+}
+
+.outcomes-metrics-grid {
+	display: grid;
+	gap: 0.85rem;
+}
+
+.outcome-metric-card {
+	padding: 1rem 0.95rem;
+	border: 1px solid #d3deef;
+	border-radius: 0.9rem;
+	background-color: #ffffff;
+	box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.outcome-metric-value {
+	display: block;
+	margin-bottom: 0.25rem;
+	color: #0f172a;
+	font-family: "Poppins";
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+.outcome-metric-label {
+	display: block;
+	color: #475569;
+	font-size: 0.93rem;
+	line-height: 1.5;
+}
+
+/********************/
+/*     Process      */
+/********************/
+.process-section {
+	padding-top: 5.2rem;
+	padding-bottom: 5.1rem;
+	background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+	border-top: 1px solid #d9e2f3;
+	border-bottom: 1px solid #d9e2f3;
+}
+
+.process-header {
+	margin-bottom: 1.9rem;
+	text-align: center;
+}
+
+.process-kicker {
+	display: inline-block;
+	margin-bottom: 0.6rem;
+	color: var(--color-primary);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+}
+
+.process-header h2 {
+	margin-bottom: 0.75rem;
+}
+
+.process-header p {
+	max-width: 43rem;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	color: #475569;
+}
+
+.process-grid {
+	display: grid;
+	gap: 0.85rem;
+}
+
+.process-step-card {
+	position: relative;
+	padding: 1rem 1rem 1.05rem;
+	border: 1px solid #d3deef;
+	border-radius: 0.95rem;
+	background-color: #ffffff;
+	box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.process-step-index {
+	display: inline-block;
+	margin-bottom: 0.6rem;
+	color: var(--color-primary);
+	font-family: "Poppins";
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.06rem;
+}
+
+.process-step-card h4 {
+	margin-bottom: 0.45rem;
+	font-size: 1.08rem;
+}
+
+.process-step-card p {
+	margin-bottom: 0;
+	color: #475569;
+}
+
 /*******************************/
 /*     Project Case Pages      */
 /*******************************/
@@ -2363,6 +2549,22 @@ a:hover.back-to-top {
 	/* end of projects */
 
 
+	/* Outcomes */
+	.outcomes-metrics-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	/* end of outcomes */
+
+
+	/* Process */
+	.process-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	/* end of process */
+
+
 	/* FAQ */
 	.faq-section .faq-accordion .card button {
 		padding: 1.05rem 1.2rem;
@@ -2570,6 +2772,28 @@ a:hover.back-to-top {
 	}
 
 	/* end of about */
+
+
+	/* Outcomes */
+	.outcomes-layout {
+		grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+		align-items: stretch;
+	}
+
+	/* end of outcomes */
+
+
+	/* Process */
+	.process-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.process-step-card:nth-child(4),
+	.process-step-card:nth-child(5) {
+		grid-column: span 1;
+	}
+
+	/* end of process */
 
 
 	/* FAQ */
@@ -2901,6 +3125,23 @@ a:hover.back-to-top {
 	}
 
 	/* end of projects */
+
+
+	/* Outcomes */
+	.outcomes-summary-card,
+	.outcome-metric-card {
+		padding: 1.2rem 1.15rem;
+	}
+
+	/* end of outcomes */
+
+
+	/* Process */
+	.process-grid {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
+
+	/* end of process */
 
 
 	/* Project Case Pages */
