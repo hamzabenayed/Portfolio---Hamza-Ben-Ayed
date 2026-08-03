@@ -330,3 +330,167 @@ What changed:
 Main files:
 - `index.html` (new outcomes and process section structure/content)
 - `css/styles.css` (section visuals and responsive grid rules)
+
+## About Section UI/UX Balance
+
+Improved the `About & Experience` section to avoid the previous imbalance where the right timeline was long and the left column ended too early.
+
+What changed:
+- Added a concise section eyebrow and supporting summary for clearer hierarchy
+- Expanded the left rail into a complete career profile:
+  - professional intro
+  - impact snapshot
+  - delivery ownership card
+  - platform mindset card
+  - current focus card
+  - delivery toolkit card
+- Improved timeline cards with role categories and skill tags for faster scanning
+- Refined spacing, card styling, hover states, and section background
+- Added responsive behavior so the layout stays coherent on mobile, tablet, and desktop
+- Fixed the freelance context text encoding issue by replacing the broken separator with `Freelance / Hybrid`
+
+Main files:
+- `index.html` (about section content and timeline structure)
+- `css/styles.css` (about section styling and responsive rules)
+
+## WordPress Project Additions
+
+Added two recent WordPress website projects to the `Projects Built For Production` section.
+
+What changed:
+- Added `SOBYFA Conseil` as a WordPress website redesign project
+- Added `Elevational` as a WordPress brand website project
+- Positioned both projects near the top of the project grid as recent work
+- Added live website links with secure external-link attributes
+- Updated the project section intro to include WordPress website delivery
+- Used WordPress mShots live screenshot thumbnails for project media:
+  - `https://sobyfaconseil.com/`
+  - `https://elevational.co.uk/`
+
+Notes:
+- Local Chrome/PowerShell network access was blocked in this environment, so static screenshot files could not be captured directly from the shell.
+- The portfolio cards use live screenshot URLs instead of committing error-page screenshots.
+
+Main file:
+- `index.html` (new WordPress project cards and project intro update)
+
+## Process Section Redesign
+
+Redesigned the `How I Work From Scope to Production` section for a more compact and modern UX.
+
+What changed:
+- Replaced long paragraph-heavy cards with shorter step summaries
+- Added action labels for each phase:
+  - Clarify
+  - Design
+  - Build
+  - Validate
+  - Operate
+- Converted the layout into a compact stepper-style flow with hover feedback
+- Reduced card height, padding, and text density for better scanning
+- Added responsive behavior for desktop, tablet, and narrow mobile screens
+
+Main files:
+- `index.html` (process section content structure)
+- `css/styles.css` (process stepper layout and responsive behavior)
+
+## Quick Actions Button Contrast Fix
+
+Fixed unreadable outline buttons in the contact section `Quick Actions` card.
+
+What changed:
+- Added contact-card-specific styles for `Download CV` and `Open LinkedIn`
+- Improved contrast on the dark card background
+- Added readable hover and focus states
+- Kept the primary `Email Me` button visually dominant
+
+Main file:
+- `css/styles.css` (contact quick action button states)
+
+## Contact Method Card Redesign
+
+Redesigned the contact method cards beside `Quick Actions` for a more modern and premium contact experience.
+
+What changed:
+- Added icon-led card headers for Email, LinkedIn, GitHub, and Availability
+- Added contextual badges such as `Best first step`, `Career`, `Code`, and `Open`
+- Improved card hierarchy with shorter supporting copy
+- Added subtle accent bars, decorative depth, hover movement, and link arrow feedback
+- Added safer wrapping for long email text on smaller screens
+- Preserved all existing contact destinations
+
+Main files:
+- `index.html` (contact method card structure)
+- `css/styles.css` (premium card styling and interaction states)
+
+## Footer Premium Redesign
+
+Redesigned the footer to match the upgraded contact section and present a more polished professional close.
+
+What changed:
+- Added an availability/status badge in the brand area
+- Rewrote the footer positioning text for software, platform, and WordPress delivery
+- Added primary and secondary footer CTAs:
+  - `Start a Conversation`
+  - `Download CV`
+- Added professional value chips for platform engineering, CI/CD, WordPress, and production systems
+- Rebuilt quick links with icons and hover movement
+- Rebuilt direct contact rows with icons, cleaner labels, and readable profile names
+- Added a footer bottom line with a selected-work link
+- Updated copyright text to include 2026 and a valid homepage link
+
+Main files:
+- `index.html` (footer structure and copy)
+- `css/styles.css` (footer layout, cards, interactions, and responsive behavior)
+
+## Footer Balance Refinement
+
+Refined the premium footer after visual review to make the columns feel more coherent and less uneven.
+
+What changed:
+- Added a `Recommended path` card inside the Explore panel
+- Changed footer cards to stretch to equal height at desktop widths
+- Bottom-aligned the social icons inside the direct contact panel
+- Removed the desktop rule that forced footer panels to align only at the top
+
+Main files:
+- `index.html` (Explore panel supporting content)
+- `css/styles.css` (equal-height footer panel behavior)
+
+## Mobile Responsiveness Pass
+
+Reviewed the homepage at mobile widths and tightened responsive behavior for the most recent layout changes.
+
+What changed:
+- Added a global horizontal overflow guard to prevent sideways scrolling on mobile
+- Added small-screen hero rules for:
+  - headline wrapping
+  - stacked CTA buttons
+  - stacked hero chips
+  - constrained profile card width
+- Added small-screen footer rules so footer CTAs stack full-width on phones
+- Verified mobile behavior for:
+  - hero
+  - about
+  - services
+  - projects
+  - process
+  - contact
+  - footer
+
+Main file:
+- `css/styles.css` (mobile overflow guard and small-screen refinements)
+
+## Navbar Scroll Contrast Fix
+
+Fixed a desktop navbar contrast issue where the header could appear transparent with low-contrast links after navigating to lower sections.
+
+What changed:
+- Updated the navbar scroll detection script to use `window.scrollTop()` instead of fixed-element offset
+- Made the desktop fixed navbar use a consistent dark background instead of relying on a fragile transparent state
+- Reinforced scrolled navbar text, active, hover, shadow, and backdrop styling
+- Verified the navbar over the `About` section with a local browser screenshot
+
+Main files:
+- `js/scripts.js` (navbar scroll class detection)
+- `css/styles.css` (desktop navbar contrast and scrolled state)
